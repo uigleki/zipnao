@@ -1,0 +1,54 @@
+name: zipnao
+description: Fix CJK encoding issues in ZIP archives and text files.
+publish_to: none
+version: 1.0.0+1
+
+homepage: https://github.com/uigleki/zipnao
+repository: https://github.com/uigleki/zipnao
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.5
+
+  # File Processing
+  archive: ^4.0.7
+  charset: ^2.0.1
+  big5_utf8_converter: ^1.1.1
+  path: ^1.9.1
+
+  # File Selection & Drag-Drop
+  file_picker: ^10.3.7
+  desktop_drop: ^0.7.0
+
+  # Serialization
+  msgpack_dart: ^1.0.1
+
+  # UI Components
+  data_table_2: ^2.7.2
+
+  # Window Management
+  window_manager: ^0.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  windows:
+    generate: true
+    image_path: "assets/images/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/data/
