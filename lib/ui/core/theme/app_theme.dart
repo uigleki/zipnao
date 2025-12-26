@@ -5,16 +5,16 @@ class AppTheme {
 
   static const _seedColor = Colors.indigo;
 
-  static ThemeData get light => ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: _seedColor),
-    useMaterial3: true,
-  );
+  static ThemeData get light => _buildTheme(Brightness.light);
+  static ThemeData get dark => _buildTheme(Brightness.dark);
 
-  static ThemeData get dark => ThemeData(
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: _seedColor,
-      brightness: Brightness.dark,
-    ),
-    useMaterial3: true,
-  );
+  static ThemeData _buildTheme(Brightness brightness) {
+    return ThemeData(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: _seedColor,
+        brightness: brightness,
+      ),
+      useMaterial3: true,
+    );
+  }
 }
