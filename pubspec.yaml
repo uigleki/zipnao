@@ -23,7 +23,7 @@ dependencies:
   path: ^1.9.1
 
   # File Selection & Drag-Drop
-  file_picker: ^10.3.7
+  file_picker: ^11.0.2
   desktop_drop: ^0.7.0
 
   # Serialization
